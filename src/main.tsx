@@ -5,8 +5,11 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import './index.css'
-import Root from './routes/root'
+import Root from './routes/Root'
 import ErrorPage from './error-page'
+import Cart from './routes/Cart';
+import Product from './routes/Product';
+
 
 const router = createBrowserRouter([
 {
@@ -15,8 +18,13 @@ const router = createBrowserRouter([
   errorElement: <ErrorPage />,
 },
 {
-  path: "homepage/:homepageId",
-}
+  path: "cart",
+  element: <Cart />,
+},
+{
+  path: "product/:productId",
+  element: <Product />,
+},
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

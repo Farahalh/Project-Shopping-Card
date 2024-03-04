@@ -1,3 +1,7 @@
 export default function ProductList() {
-    return 'Hello from ProductList'
+    return (
+        <div>
+            Hello from ProductList
+        </div>
+        );
 }
