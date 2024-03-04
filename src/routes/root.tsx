@@ -1,6 +1,6 @@
 import Homepage from './Homepage';
 
-export default function () {
+export default function Root() {
 return (
         <>
             <div id='detail'>
