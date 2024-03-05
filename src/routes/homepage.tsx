@@ -1,17 +1,17 @@
-import ProductList
- from './ProductList';
- import Cart from './Cart';
+import ProductList from './ProductList';
+import Header from './Header';
+import Cart from './Cart';
  
 export default function Homepage() {
     return (
         <div id='homepage'>
-            Hello from Homepage
+            <Header />
 
-            <p>
+            {/*<p>
                 HomePage: The main component 
                 that displays the list of 
                 products.
-            </p>
+            </p>*/}
 
             <ProductList />
             <Cart />
