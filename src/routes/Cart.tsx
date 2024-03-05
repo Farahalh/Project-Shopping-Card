@@ -1,5 +1,5 @@
-import CartItem from './CartItem';
-import Product from './Product';
+import CartItem from './CartItem'
+import Product from './Product'
  
 export default function Cart() {
     return (

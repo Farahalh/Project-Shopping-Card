@@ -7,9 +7,8 @@ import {
 import './index.css'
 import Root from './routes/Root'
 import ErrorPage from './error-page'
-import Cart from './routes/Cart';
-import Product from './routes/Product';
-
+import Cart from './routes/Cart'
+import Product from './routes/Product'
 
 const router = createBrowserRouter([
 {
