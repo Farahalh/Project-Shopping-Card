@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button"
  
 export default function Header() {
     return (
-        <div id='header' className="pb-6">
+        <div id='header' className="pb-1">
 
                 <Menubar className="flex p-8">
 
