@@ -10,7 +10,6 @@ import {
 export default function Homepage() {
     return (
         <div id='homepage'>
-            <Header />
             <div className='px-2 flex'>
                 
                 <div id='accordion' className='flex-intial w-32 '>
@@ -41,7 +40,6 @@ export default function Homepage() {
                 </div>
 
                 <ProductList />
-
             </div>
         </div>
     );
