@@ -5,15 +5,16 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 import './index.css'
-import Root from './routes/Root'
 import ErrorPage from './error-page'
 import Cart from './routes/Cart'
 import Product from './routes/Product'
+import App from './App'
+import Header from './routes/Header'
 
 const router = createBrowserRouter([
 {
   path: "/",
-  element: <Root />,
+  element: <App />,
   errorElement: <ErrorPage />,
 },
 {
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <Header />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

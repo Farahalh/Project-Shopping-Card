@@ -1,10 +1,11 @@
-function App() {
+import Homepage from "./routes/Homepage";
 
-  return (
-    <>
-<h1 className='text-2xl text-red-400'>hello</h1>
-    </>
-  )
+export default function App() {
+return (
+        <>
+            <div id='root'>
+                    <Homepage />
+            </div>
+        </>
+    );
 }
-
-export default App

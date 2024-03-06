@@ -1,5 +1,4 @@
 import ProductList from './ProductList';
-import Header from './Header';
 import {
     Accordion,
     AccordionContent,
