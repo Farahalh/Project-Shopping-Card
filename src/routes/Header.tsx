@@ -9,8 +9,6 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TiShoppingCart } from "react-icons/ti";
 import { Button } from "@/components/ui/button"
-
-  
  
 export default function Header() {
     return (
@@ -19,10 +17,10 @@ export default function Header() {
                 <Menubar className="flex p-8">
 
                 <MenubarMenu>
-                    <MenubarTrigger className="flex-none">
+                    <MenubarTrigger className="">
                         <RxHamburgerMenu />  
                     </MenubarTrigger>
-                        <h4 className="flex-1 w-64 px-6">FA.COM</h4>
+                        <h4 className="flex-1">FA.COM</h4>
                             <MenubarContent>
                                 <MenubarItem>New Items</MenubarItem>
                                     <MenubarSeparator />
@@ -35,11 +33,9 @@ export default function Header() {
 
                 </MenubarMenu>
 
-                <div className="flex-none">
                 <Button variant="outline">
                 <TiShoppingCart />
                 </Button>
-                </div>
 
                 </Menubar>
 
