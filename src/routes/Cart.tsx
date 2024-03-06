@@ -1,17 +1,14 @@
-import CartItem from './CartItem'
-import Product from './Product'
- 
+import CartItem from "./CartItem";
+
 export default function Cart() {
     return (
         <div id='cart'>
-            Hello from Cart
+            <h2 className='text-center text-2xl font-semibold py-2'>
+              Cart
+            </h2>
 
-            <p>
-                Cart: The main component that 
-                displays the cart items.
-            </p>
+            <CartItem />
 
-            <Product />
             <CartItem />
         </div>
         );
