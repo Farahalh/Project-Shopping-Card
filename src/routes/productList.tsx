@@ -9,27 +9,9 @@ export default function ProductList() {
                         <div className='productImg'>
                         <img src="https://placehold.co/400" alt="1" />
                         <div className='productText'>
-                            <h6>FA</h6>
-                            <p>Lorem ipsum dolor...</p>
-                            <p>200 sek</p>
-                        </div>
-                        </div>
-                    
-                        <div className='productImg'>
-                        <img src="https://placehold.co/400" alt="2" />
-                        <div className='productText'>
-                            <h6>FA</h6>
-                            <p>Lorem ipsum dolor...</p>
-                            <p>200 sek</p>
-                        </div>
-                        </div>
-
-                        <div className='productImg'>
-                        <img src="https://placehold.co/400" alt="3" />
-                        <div className='productText'>
-                            <h6>FA</h6>
-                            <p>Lorem ipsum dolor...</p>
-                            <p>200 sek</p>
+                            <h6 className="productName">FA</h6>
+                            <p className="productDetail">Lorem ipsum dolor...</p>
+                            <p className="productPrice">200 sek</p>
                         </div>
                         </div>
 
