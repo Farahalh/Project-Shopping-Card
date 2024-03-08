@@ -5,7 +5,7 @@ export default function Product() {
         <div id='product' className="container pt-4">
 
                 <div className="mainProductImg pb-10">
-                <img src="https://placehold.co/400" alt="mainProductImg"/>
+                <img src="https://placehold.co/400" alt="productImage"/>
                 </div>
 
                 <div className="productDescripton pt-2">
