@@ -1,3 +1,4 @@
+import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useQuery } from '@tanstack/react-query'
 import { useNavigate } from 'react-router-dom'
@@ -52,7 +53,10 @@ if(isLoading) {
                         <p>{product.price} sek</p>
                         <p>Rate: {product.rating.rate}</p>
                         <p className='py-4'>Reviews: {product.rating.count}</p>
-                        <div className='goToProduct' onClick={() => navigate('/product/:productId')}>Go To Product</div>
+                       <Button>
+                       <div className='goToProduct' onClick={() => navigate('/product/:productId')}>Go To Product</div>
+                       </Button>
+                        
                     </CardContent>
                 </Card>
         ))}
