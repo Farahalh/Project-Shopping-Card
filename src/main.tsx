@@ -7,10 +7,10 @@ import {
 import './index.css'
 import ErrorPage from './error-page'
 import Cart from './routes/Cart'
-import Product from './routes/Product'
 import App from './App'
 import Header from './routes/Header'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import SingleProduct from './routes/singleProduct'
 
 const queryClient = new QueryClient();
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 },
 {
   path: "product/:productId",
-  element: <Product />,
+  element: <SingleProduct />,
 },
 ]);
 
