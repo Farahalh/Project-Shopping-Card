@@ -27,14 +27,14 @@ export default function ProductList() {
 
                         <Card key={product.id}>
                             <CardHeader>
-                                <CardTitle>{product.title}</CardTitle>
                                 <img src={product.image} alt="productImage" />
-                                <CardDescription>{product.description}</CardDescription>
+                                <CardTitle className='pt-4'>{product.title}</CardTitle>
                             </CardHeader>
                             <CardContent>
-                                <p>{product.price} sek</p>
-                                <p>Rate: {product.rating.rate}</p>
-                                <p className='py-4'>Reviews: {product.rating.count}</p>
+                            <CardDescription className='pb-3'>{product.description}</CardDescription>
+                                <p >{product.price} sek</p>
+                                <p className='py-1'>Rate: {product.rating.rate}</p>
+                                <p className='py-1'>Reviews: {product.rating.count}</p>
                             <Button>
                             <div className='goToProduct' onClick={() => navigate(`/product/${product.id}`)}>Go To Product</div>
                             </Button>

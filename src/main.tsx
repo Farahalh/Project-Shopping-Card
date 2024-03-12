@@ -10,7 +10,7 @@ import Cart from './routes/Cart'
 import App from './App'
 import Header from './routes/Header'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import SingleProduct from './routes/singleProduct'
+import SingleProduct from './routes/SingleProduct'
 
 const queryClient = new QueryClient();
 

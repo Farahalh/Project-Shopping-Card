@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useGetProduct } from "./hooks";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
   
 export default function SingleProduct() {
@@ -22,11 +22,11 @@ export default function SingleProduct() {
             <Card key={singleProduct.id}>
             <CardHeader>
                 <img src={singleProduct.image} alt="productImage" />
-                <CardTitle>{singleProduct.title}</CardTitle>
+                <CardTitle className="py-2">{singleProduct.title}</CardTitle>
+                <CardDescription><p >{singleProduct.description}</p></CardDescription>
             </CardHeader>
             <CardContent>
-                <p>{singleProduct.description}</p>
-                <p>{singleProduct.price} sek</p>
+                <p className="pb-4">{singleProduct.price} sek</p>
 
                 {/* todo:
                 - use stateManagement to actually input this into the cartItem 
