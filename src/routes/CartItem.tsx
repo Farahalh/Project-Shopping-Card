@@ -1,6 +1,5 @@
 import {
     Card,
-    CardContent,
   } from "@/components/ui/card"
 import { FaRegTrashCan } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
@@ -42,4 +41,3 @@ export default function CartItem() {
         </div>
         );
 }
-
