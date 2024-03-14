@@ -1,25 +1,15 @@
 import { Card } from "@/components/ui/card";
 // import { FaRegTrashCan } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
-import { useGetProduct } from "./hooks";
 import { useAtom } from "jotai";
 import { productAtom } from "@/atoms/product";
 import { Product } from "@/atoms/product";
 
 export default function CartItem() {
-const { error, isLoading } = useGetProduct();
 
   const [productsAtom, setProductsAtom] = useAtom(productAtom);
 
   console.log(productsAtom);
-
-  if (error) {
-    return <div>{error.message}</div>;
-  }
-
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
 
   return (
     <div className="cartItem">
