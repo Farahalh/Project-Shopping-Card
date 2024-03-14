@@ -1,11 +1,12 @@
 import { atom } from 'jotai'
 //atomWithStorage
 
-interface Product {
+export interface Product {
 id: number,
-image: string,
-name: string,
+image?: string,
+title: string,
 price: number,
+quantity: number,
 }
 
 //atomWithStorage

@@ -9,6 +9,7 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { TiShoppingCart } from "react-icons/ti";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -18,7 +19,9 @@ export default function Header() {
           <MenubarTrigger className="">
             <RxHamburgerMenu />
           </MenubarTrigger>
-          <h4 className="flex-1">FA.COM</h4>
+          <Link to={"/"} className="flex-1">
+            FA.COM
+          </Link>
           <MenubarContent>
             <MenubarItem>New Items</MenubarItem>
             <MenubarSeparator />
@@ -30,9 +33,14 @@ export default function Header() {
           </MenubarContent>
         </MenubarMenu>
 
-        <Button variant="outline">
-          <TiShoppingCart />
-        </Button>
+        <Link to={"/cart"}>
+          <Button
+            variant="outline"
+            // onClick={() => (window.location.href = "/cart")}
+          >
+            <TiShoppingCart />
+          </Button>
+        </Link>
       </Menubar>
     </div>
   );

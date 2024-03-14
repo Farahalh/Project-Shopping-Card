@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { useAtom } from "jotai";
 import { productAtom } from "@/atoms/product";
+import Header from "./Header";
 
 export default function SingleProduct() {
   const { singleProduct, error, isLoading } = useGetProduct();
@@ -27,6 +28,7 @@ export default function SingleProduct() {
 
   return (
     <div id="singleProduct">
+      <Header />
       <div className="container py-8">
         <Card key={singleProduct.id}>
           <CardHeader>
@@ -45,8 +47,9 @@ export default function SingleProduct() {
                   {
                     id: singleProduct.id,
                     image: singleProduct.image,
-                    name: singleProduct.title,
+                    title: singleProduct.title,
                     price: singleProduct.price,
+                    quantity: singleProduct.quantity,
                   },
                 ])
               }
