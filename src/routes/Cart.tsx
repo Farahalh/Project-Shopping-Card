@@ -4,7 +4,7 @@ import { useAtom } from "jotai";
 import { productAtom } from "@/atoms/product";
 
 export default function Cart() {
-  const [productsAtom, setProductsAtom] = useAtom(productAtom);
+  const [productsAtom] = useAtom(productAtom);
 
   // if cart is empty, display message
   const emptyCart = () => {
