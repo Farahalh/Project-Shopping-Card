@@ -1,4 +1,4 @@
-import Homepage from "./routes/Homepage";
+import Homepage from "./routes/homepage";
 
 export default function App() {
   return (
