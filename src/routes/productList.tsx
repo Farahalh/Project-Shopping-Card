@@ -30,30 +30,34 @@ export default function ProductList() {
           <h1 className="text-base font-semibold py-4">
             Welcome to FA Online Shop
           </h1>
+
           {products.map((product: Product) => (
             <Card key={product.id}>
+
               <CardHeader>
                 <img src={product.image} alt="productImage" />
                 <CardTitle className="pt-4">{product.title}</CardTitle>
               </CardHeader>
+
               <CardContent>
+
                 <CardDescription className="pb-3">
                   {product.description}
                 </CardDescription>
+
                 <p>{product.price} sek</p>
                 <p className="py-1">Rate: {product.rating.rate}</p>
                 <p className="py-1">Reviews: {product.rating.count}</p>
-                <Button>
-                  <div
-                    className="goToProduct"
-                    onClick={() => navigate(`/product/${product.id}`)}
-                  >
+
+                <Button className="goToProduct"
+                    onClick={() => navigate(`/product/${product.id}`)}>
                     Go To Product
-                  </div>
                 </Button>
+
               </CardContent>
             </Card>
           ))}
+          
         </div>
       </div>
     </div>

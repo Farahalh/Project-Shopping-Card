@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./error-page";
 import Cart from "./routes/Cart";
 import App from "./App";
-import Header from "./routes/Header";
+// import Header from "./routes/Header";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import SingleProduct from "./routes/SingleProduct";
 

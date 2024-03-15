@@ -40,19 +40,35 @@ export default function SingleProduct() {
           </CardHeader>
           <CardContent>
             <p className="pb-4">{singleProduct.price} sek</p>
+
             <Button
-              onClick={() =>
-                setProductsAtom([
-                  ...productsAtom,
-                  {
-                    id: singleProduct.id,
-                    image: singleProduct.image,
-                    title: singleProduct.title,
-                    price: singleProduct.price,
-                    quantity: singleProduct.quantity,
-                  },
-                ])
-              }
+              onClick={() => {
+                setProductsAtom((prevProducts) => {
+                  const index = prevProducts.findIndex(
+                    (product) => product.id === singleProduct.id
+                  );
+
+                  if (index !== -1) {
+                    const updatedProducts = [...prevProducts];
+                    updatedProducts[index] = {
+                      ...updatedProducts[index],
+                      quantity: updatedProducts[index].quantity + 1,
+                    };
+                    return updatedProducts;
+                  } else {
+                    return [
+                      ...prevProducts,
+                      {
+                        id: singleProduct.id,
+                        image: singleProduct.image,
+                        title: singleProduct.title,
+                        price: singleProduct.price,
+                        quantity: 1,
+                      },
+                    ];
+                  }
+                });
+              }}
             >
               Add to Cart
             </Button>

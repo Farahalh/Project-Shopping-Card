@@ -9,6 +9,7 @@ export default function Cart() {
       <h2 className="text-center text-2xl font-semibold py-2">Cart</h2>
 
       <CartItem />
+      
     </div>
   );
 }
