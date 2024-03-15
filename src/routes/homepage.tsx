@@ -7,6 +7,7 @@ export default function Homepage() {
       <Header />
 
       <ProductList />
+      
     </div>
   );
 }
