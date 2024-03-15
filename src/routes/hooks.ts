@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useParams } from "react-router-dom";
 
+// get 10 products from API
 export function useGetProducts() {
   const {
     data: products,
@@ -21,6 +22,7 @@ export function useGetProducts() {
   };
 }
 
+// get one product based on id
 export function useGetProduct() {
   const { productId } = useParams();
 

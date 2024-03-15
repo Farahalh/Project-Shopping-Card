@@ -31,16 +31,15 @@ export default function ProductList() {
             Welcome to FA Online Shop
           </h1>
 
+          {/* getting products from API and displaying in the card below */}
           {products.map((product: Product) => (
             <Card key={product.id}>
-
               <CardHeader>
                 <img src={product.image} alt="productImage" />
                 <CardTitle className="pt-4">{product.title}</CardTitle>
               </CardHeader>
 
               <CardContent>
-
                 <CardDescription className="pb-3">
                   {product.description}
                 </CardDescription>
@@ -49,15 +48,16 @@ export default function ProductList() {
                 <p className="py-1">Rate: {product.rating.rate}</p>
                 <p className="py-1">Reviews: {product.rating.count}</p>
 
-                <Button className="goToProduct"
-                    onClick={() => navigate(`/product/${product.id}`)}>
-                    Go To Product
+                {/* navigation to SingleProduct page based on id onClick */}
+                <Button
+                  className="goToProduct"
+                  onClick={() => navigate(`/product/${product.id}`)}
+                >
+                  Go To Product
                 </Button>
-
               </CardContent>
             </Card>
           ))}
-          
         </div>
       </div>
     </div>

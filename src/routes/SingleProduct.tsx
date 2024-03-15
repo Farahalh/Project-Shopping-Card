@@ -27,6 +27,7 @@ export default function SingleProduct() {
   }
 
   return (
+    // single product page displaying product in card
     <div id="singleProduct">
       <Header />
       <div className="container py-8">
@@ -41,6 +42,7 @@ export default function SingleProduct() {
           <CardContent>
             <p className="pb-4">{singleProduct.price} sek</p>
 
+            {/* onClick add product to empty [] displayed in CartItem and then Cart*/}
             <Button
               onClick={() => {
                 setProductsAtom((prevProducts) => {

@@ -22,6 +22,7 @@ export default function Header() {
           <Link to={"/"} className="flex-1">
             FA.COM
           </Link>
+          {/* static menu */}
           <MenubarContent>
             <MenubarItem>New Items</MenubarItem>
             <MenubarSeparator />

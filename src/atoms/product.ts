@@ -1,5 +1,5 @@
 import { atom } from 'jotai'
-//atomWithStorage
+//future use atomWithStorage 
 
 export interface Product {
 id: number,
@@ -9,5 +9,5 @@ price: number,
 quantity: number,
 }
 
-//atomWithStorage
+//future use atomWithStorage
 export const productAtom = atom<Product[]>([]);
