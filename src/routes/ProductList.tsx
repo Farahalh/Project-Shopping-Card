@@ -33,9 +33,9 @@ export default function ProductList() {
 
           {/* getting products from API and displaying in the card below */}
           {products.map((product: Product) => (
-            <Card key={product.id}>
+            <Card key={product.id} className="w-auto">
               <CardHeader>
-                <img src={product.image} alt="productImage" />
+                <img src={product.image} alt="productImage" className="w-36" />
                 <CardTitle className="pt-4">{product.title}</CardTitle>
               </CardHeader>
 
