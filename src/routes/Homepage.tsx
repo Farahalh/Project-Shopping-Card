@@ -3,10 +3,11 @@ import ProductList from "./ProductList";
 
 export default function Homepage() {
   return (
-    <div className="homepage container mx-auto md:max-w-2xl lg:max-w-3xl">
+    <div className="homepage">
       <Header />
-
-      <ProductList />
+      <div className="w-auto p-6">
+        <ProductList />
+      </div>
     </div>
   );
 }

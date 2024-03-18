@@ -30,13 +30,13 @@ export default function SingleProduct() {
     // single product page displaying product in card
     <div id="singleProduct">
       <Header />
-      <div className="container py-8 mx-auto md:max-w-2xl lg:max-w-3xl">
-        <Card key={singleProduct.id} className="w-auto p-6">
+      <div className="w-auto p-6">
+        <Card key={singleProduct.id} className="">
           <CardHeader>
             <img src={singleProduct.image} alt="productImage" className="w-40 mx-auto"/>
-            <CardTitle className="py-2">{singleProduct.title}</CardTitle>
-            <CardDescription>
-              <p>{singleProduct.description}</p>
+            <CardTitle className="pt-4">{singleProduct.title}</CardTitle>
+            <CardDescription >
+              <p className="py-1">{singleProduct.description}</p>
             </CardDescription>
           </CardHeader>
           <CardContent>

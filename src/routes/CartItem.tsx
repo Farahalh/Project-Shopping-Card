@@ -26,19 +26,19 @@ export default function CartItem() {
   console.log(productsAtom);
 
   return (
-    <div className="cartItem container mx-auto md:max-w-2xl lg:max-w-3xl">
+    <div className="cartItem">
       {/* mapping through productsAtom that was saved in array and displayes each in below Card */}
       {productsAtom.map((productsAtom: Product) => (
         <Card
           key={productsAtom.id}
-          className="card flex flex-row flex-nowrap p-4"
+          className="flex w-auto p-6"
         >
           <div className="productInfo flex">
             <div className="productImg flex-intial w-32">
               <img src={productsAtom.image} alt="productImg" className="p-1" />
             </div>
 
-            <div className="flex flex-col">
+            <div className="flex-col p-4">
               <div className="flex-initial">
                 <p className="productName p-2">{productsAtom.title}</p>
                 <p className="productName p-2">{productsAtom.price} sek</p>
@@ -113,7 +113,7 @@ export default function CartItem() {
           </div>
 
           {/* button for remove product entirely from cart */}
-          <div className="trashIcon flex-initial pl-12">
+          <div className="trashIcon flex-right pl-12">
             <Button
               variant="outline"
               onClick={() => deleteItem(productsAtom.id)}

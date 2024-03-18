@@ -28,7 +28,7 @@ export default function Cart() {
       <h5 className="text-center font-semibold">{emptyCart()}</h5>
       <CartItem />
 
-      <h5 className="text-right p-8">Total amount: {totalSum} sek</h5>
+      <h5 className="text-right font-bold p-8">Total amount: {totalSum.toFixed(2)} sek</h5>
     </div>
   );
 }
