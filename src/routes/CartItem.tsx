@@ -26,7 +26,7 @@ export default function CartItem() {
   console.log(productsAtom);
 
   return (
-    <div className="cartItem">
+    <div className="cartItem container mx-auto md:max-w-2xl lg:max-w-3xl">
       {/* mapping through productsAtom that was saved in array and displayes each in below Card */}
       {productsAtom.map((productsAtom: Product) => (
         <Card

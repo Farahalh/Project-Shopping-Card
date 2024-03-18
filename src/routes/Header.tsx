@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div id="header" className="pb-1">
+    <div id="header" className="container mx-auto md:max-w-2xl lg:max-w-3xl">
       <Menubar className="flex p-8">
         <MenubarMenu>
           <MenubarTrigger className="">
