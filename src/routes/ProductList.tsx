@@ -33,14 +33,14 @@ export default function ProductList() {
         <div className="grid grid-cols-1 grid-flow-row gap-4">
           {/* getting products from API and displaying in the card below */}
           {products.map((product: Product) => (
-            <Card key={product.id} className="container">
+            <Card key={product.id} className="">
               <CardHeader>
                 <img
                   src={product.image}
                   alt="productImage"
                   className="w-40 mx-auto"
                 />
-                <CardTitle className="text-lg lg:text-md">{product.title}</CardTitle>
+                <CardTitle className="text-md lg:text-md">{product.title}</CardTitle>
               </CardHeader>
 
               <CardContent className="text-sm lg:text-md">

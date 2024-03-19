@@ -31,14 +31,14 @@ export default function SingleProduct() {
     <div className="singleProduct">
       <Header />
       <div className="py-14">
-        <Card key={singleProduct.id} className="container">
+        <Card key={singleProduct.id} className="">
           <CardHeader>
             <img
               src={singleProduct.image}
               alt="productImage"
               className="w-40 mx-auto"
             />
-            <CardTitle className="text-lg lg:text-md">
+            <CardTitle className="text-md lg:text-md">
               {singleProduct.title}
             </CardTitle>
           </CardHeader>

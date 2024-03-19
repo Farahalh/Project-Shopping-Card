@@ -30,9 +30,9 @@ export default function CartItem() {
       {/* mapping through productsAtom that was saved in array and displayes each in below Card */}
       {productsAtom.map((productsAtom: Product) => (
         <div className="pb-4">
-          <Card key={productsAtom.id} className="container flex">
+          <Card key={productsAtom.id} className="">
             <CardHeader>
-              <img src={productsAtom.image} alt="productImg" className="w-40" />
+              <img src={productsAtom.image} alt="productImg" className="w-40 mx-auto" />
             </CardHeader>
 
             <CardContent className="p-8">
