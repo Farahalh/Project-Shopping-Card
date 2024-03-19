@@ -25,35 +25,36 @@ export default function ProductList() {
 
   return (
     <div className="productlist">
-      <div className="flex-auto">
-        <h1 className="text-base font-semibold pb-4">
+
+        <h1 className="text-base font-semibold py-4">
           Welcome to FA Online Shop
         </h1>
+
         <div className="grid grid-cols-1 grid-flow-row gap-4">
           {/* getting products from API and displaying in the card below */}
           {products.map((product: Product) => (
-            <Card key={product.id} className="w-auto p-6">
+            <Card key={product.id} className="container">
               <CardHeader>
                 <img
                   src={product.image}
                   alt="productImage"
                   className="w-40 mx-auto"
                 />
-                <CardTitle className="pt-4">{product.title}</CardTitle>
+                <CardTitle className="text-lg lg:text-md">{product.title}</CardTitle>
               </CardHeader>
 
-              <CardContent>
-                <CardDescription className="pb-3">
+              <CardContent className="text-sm lg:text-md">
+                <CardDescription className="py-1">
                   {product.description}
                 </CardDescription>
 
-                <p>{product.price} sek</p>
+                <p className="py-1">{product.price} sek</p>
                 <p className="py-1">Rate: {product.rating.rate}</p>
                 <p className="py-1">Reviews: {product.rating.count}</p>
 
                 {/* navigation to SingleProduct page based on id onClick */}
                 <Button
-                  className="goToProduct"
+                  className="my-2"
                   onClick={() => navigate(`/product/${product.id}`)}
                 >
                   Go To Product
@@ -63,6 +64,6 @@ export default function ProductList() {
           ))}
         </div>
       </div>
-    </div>
+
   );
 }

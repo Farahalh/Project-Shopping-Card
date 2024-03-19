@@ -28,22 +28,30 @@ export default function SingleProduct() {
 
   return (
     // single product page displaying product in card
-    <div id="singleProduct">
+    <div className="singleProduct">
       <Header />
-      <div className="w-auto p-6">
-        <Card key={singleProduct.id} className="">
+      <div className="py-14">
+        <Card key={singleProduct.id} className="container">
           <CardHeader>
-            <img src={singleProduct.image} alt="productImage" className="w-40 mx-auto"/>
-            <CardTitle className="pt-4">{singleProduct.title}</CardTitle>
-            <CardDescription >
+            <img
+              src={singleProduct.image}
+              alt="productImage"
+              className="w-40 mx-auto"
+            />
+            <CardTitle className="text-lg lg:text-md">
+              {singleProduct.title}
+            </CardTitle>
+          </CardHeader>
+
+          <CardContent className="text-sm lg:text-md">
+            <CardDescription>
               <p className="py-1">{singleProduct.description}</p>
             </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <p className="pb-4">{singleProduct.price} sek</p>
+            <p className="py-1">{singleProduct.price} sek</p>
 
             {/* onClick add product to empty [] displayed in CartItem and then Cart*/}
             <Button
+              className="my-2"
               onClick={() => {
                 setProductsAtom((prevProducts) => {
                   const index = prevProducts.findIndex(

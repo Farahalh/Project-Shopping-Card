@@ -31,7 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       {/* <Header /> */}
-      <div className="container mx-auto md:max-w-2xl lg:max-w-3xl">
+      <div className="container mx-auto sm:max-w-xl lg:max-w-2xl">
       <RouterProvider router={router} />
       </div>
       

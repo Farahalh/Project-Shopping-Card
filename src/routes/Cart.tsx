@@ -23,12 +23,12 @@ export default function Cart() {
     <div className="cart">
       <Header />
 
-      <h2 className="text-center text-2xl font-semibold py-2">Cart</h2>
+      <h2 className="text-center text-2xl font-semibold py-4">Cart</h2>
 
       <h5 className="text-center font-semibold">{emptyCart()}</h5>
       <CartItem />
 
-      <h5 className="text-right font-bold p-8">Total amount: {totalSum.toFixed(2)} sek</h5>
+      <h5 className="text-right font-bold p-4">Total amount: {totalSum.toFixed(2)} sek</h5>
     </div>
   );
 }
