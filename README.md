@@ -1,6 +1,6 @@
 # Project Description: Shopping Cart Application
 
-<img src="https://farahalh.github.io/project-shopping-cart/shopping-cart.png" width="250" height="200">
+<img src="https://farahalh.github.io/Project-Shopping-Cart/shopping-cart.png" width="250" height="200">
 
 [Web demo](https://melodic-cupcake-014011.netlify.app/)
 
