@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useGetProduct } from "./hooks";
+import { useGetProduct } from "../hooks";
 import {
   Card,
   CardContent,
@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { useAtom } from "jotai";
 import { productAtom } from "@/atoms/product";
-import Header from "./Header";
+import Header from "../components/Header";
 
 export default function SingleProduct() {
   const { singleProduct, error, isLoading } = useGetProduct();

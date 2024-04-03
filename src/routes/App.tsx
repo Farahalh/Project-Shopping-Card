@@ -1,9 +1,9 @@
-import Homepage from "./routes/Homepage";
+import Homepage from "../components/Homepage";
 
 export default function App() {
   return (
     <>
-      <div id="root" >
+      <div id="root">
         <Homepage />
       </div>
     </>
