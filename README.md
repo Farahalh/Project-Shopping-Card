@@ -22,7 +22,7 @@ ProductList: /productList
 Cart: /cart
 Single Product View: /product/<id>
 2. State Management:
-The project employs Jotai for state management, ensuring efficient handling of application state. Key steps include:
+The project employs Jotai for state management, ensuring efficient handling of the application state. Key steps include:
 
 Completion of the Jotai tutorial to gain familiarity.
 Exploration of persisted storage methods for enhanced user experience.
